@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <div class="accordian-btn">How are You?</div>
+        <div class="accordian-detail">
+            <p class="data" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut atque animi officia totam impedit sunt eveniet, aspernatur accusantium suscipit placeat ex alias quibusdam, sapiente consectetur, magni consequatur saepe consequuntur?</p>
+        </div>
+    
+        <div class="accordian-btn">How are You?</div>
+        <div class="accordian-detail">
+            <p class="data" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut atque animi officia totam impedit sunt eveniet, aspernatur accusantium suscipit placeat ex alias quibusdam, sapiente consectetur, magni consequatur saepe consequuntur?</p>
+        </div>
+
+        <div class="accordian-btn">How are You?</div>
+        <div class="accordian-detail">
+            <p class="data" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut atque animi officia totam impedit sunt eveniet, aspernatur accusantium suscipit placeat ex alias quibusdam, sapiente consectetur, magni consequatur saepe consequuntur?</p>
+        </div>
+
+        <div class="accordian-btn">How are You?</div>
+        <div class="accordian-detail">
+            <p class="data" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut atque animi officia totam impedit sunt eveniet, aspernatur accusantium suscipit placeat ex alias quibusdam, sapiente consectetur, magni consequatur saepe consequuntur?</p>
+        </div>
+
+    </div>
+
+    <script>
+        const accordianBtn = Array.from(document.getElementsByClassName('accordian-btn'));
+
+        accordianBtn.forEach(item => {item.addEventListener("click", expandAccordian)})
+
+        function expandAccordian(e){
+            e.target.nextElementSibling.classList.toggle("accordian-expanded");
+        }
+
+    </script>
+</body>
+</html>
